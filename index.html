@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Amazing website</title>
+  </head>
+  <body>
+    <h1>Welcome to glorious <i>Hattusha</i></h1>
+    <h3>You are welcome to <button type="button" onclick="enterCity()">Enter</button></h3>
+    <img id="gate" src="/images/gate.jpg" alt="entrance to the ancient city of hattusha, a marvelous gate made of limestone, decorated with pillars of marble and endowed with colorful murals"> 
+    <script>
+      const mysticalEntranceMessages = [
+        "As you approach Hattusha, ethereal whispers beckon you through ancient gates.",
+        "The city reveals itself, veiled in mist, a realm suspended between worlds.",
+        "Enigmatic shadows dance on the walls as you step into the sacred embrace of Hattusha.",
+        "A celestial aura envelops you as the city's secrets unfold with each step.",
+        "Through the gates of Hattusha, time itself seems to pause, caught in the dance of ancient spirits.",
+        "The air is thick with the echoes of forgotten voices, guiding you through the mystic labyrinth.",
+        "Hattusha's entrance, an arcane portal, ushers you into a realm where history and myth converge.",
+        "You cross the threshold, and the very stones beneath your feet whisper tales of civilizations long past.",
+        "As you enter Hattusha, the city's heartbeat syncs with your own, resonating through the sacred corridors.",
+        "The city's gates open like a tome of ancient wisdom, inviting you to read the chapters of its storied existence."
+      ];
+
+      function enterCity() {
+        const randomMessage = mysticalEntranceMessages[Math.floor(Math.random() * mysticalEntranceMessages.length)];
+        alert(randomMessage);
+        
+        document.getElementById("gate").src = "/images/city.jpg";
+      }
+    </script>
+  </body>
+</html>
