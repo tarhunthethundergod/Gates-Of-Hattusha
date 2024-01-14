@@ -1,0 +1,23 @@
+{
+  "name": "gates-of-hattusha",
+  "version": "1.0.0",
+  "description": "The greatest city in the existance of humanity.",
+  "main": "index.js",
+  "scripts": {
+    "run": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarhunthethundergod/Gates-Of-Hattusha.git"
+  },
+  "author": "Asimovich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tarhunthethundergod/Gates-Of-Hattusha/issues"
+  },
+  "homepage": "https://github.com/tarhunthethundergod/Gates-Of-Hattusha#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}
