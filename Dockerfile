@@ -1,6 +1,15 @@
-FROM nginx
+FROM node:20
 
-WORKDIR /usr/share/nginx/html
+WORKDIR /opt
 
-COPY index.html index.html
-COPY images images
+COPY server.js .env ./
+COPY package.json package-lock.json ./
+
+COPY public public
+COPY views views
+
+RUN npm install
+
+EXPOSE ${Port}
+
+CMD [ "node", "server.js" ]
