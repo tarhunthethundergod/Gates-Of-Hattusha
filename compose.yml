@@ -14,7 +14,7 @@ services:
     ports:
       - 8081:3306
     environment:
-      ARIADB_USER: ${DB_User}
+      MARIADB_USER: ${DB_User}
       MARIADB_PASSWORD: ${DB_Pass}
       MARIADB_DATABASE: ${DB_Db}
       MARIADB_RANDOM_ROOT_PASSWORD: 1
