@@ -10,6 +10,6 @@ COPY views views
 
 RUN npm install
 
-EXPOSE ${Port}
+EXPOSE 8080
 
 CMD [ "node", "server.js" ]
